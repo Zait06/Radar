@@ -1,6 +1,0 @@
-{
-    "sketch": "{workspaceFolder}/test_echo/test_echo.ino",
-    "port": "COM5",
-    "output": "{workspaceFolder}/build",
-    "intelliSenseGen": "global"
-}

@@ -22,7 +22,7 @@ enum ServoDirection {
 };
 
 char buffer[100];
-Servo myServo;
+Servo m_servo;
 
 int computeDistance() {
   digitalWrite(trigPin, LOW);
@@ -40,7 +40,7 @@ void setup() {
   pinMode(echoPin, INPUT);
   pinMode(buzzerPin, OUTPUT);
   Serial.begin(9600);
-  myServo.attach(servoPin);
+  m_servo.attach(servoPin);
 }
 
 void rotateServo(ServoDirection direction) {
@@ -49,7 +49,7 @@ void rotateServo(ServoDirection direction) {
   for (int angle = startAngle; angle <= 180 - startAngle; angle++) {
     int servoAngle = baseAngle + (direction * angle);
     
-    myServo.write(servoAngle);
+    m_servo.write(servoAngle);
     distance = computeDistance();
     delay(50);
 
