@@ -1,0 +1,8 @@
+{
+    "arduino.useArduinoCli": true,
+    "arduino.path": "C:/Program Files/Arduino CLI",
+    "arduino.commandPath": "arduino-cli",
+    "arduino.enableUSBDetection": true,
+    "arduino.disableTestingOpen": false,
+    "arduino.skipHeaderProvider": false
+}
