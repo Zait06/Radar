@@ -59,8 +59,8 @@ void rotateServo(ServoDirection direction) {
       digitalWrite(buzzerPin, LOW);
     }
 
-    sprintf(buffer, "%d,%d\r\n", servoAngle, distance);
-    Serial.print(buffer);
+    sprintf(buffer, "%d,%d\r", servoAngle, distance);
+    Serial.write(buffer);
   }
 }
 
